@@ -36,6 +36,8 @@ function create_table_form() {
     let sect = document.createElement('section');
     sect.id = "section";
     div_table.appendChild(sect);
+    
+    setStorage(key, 'tab');
 }
 
 function draw_table(width, height) {
