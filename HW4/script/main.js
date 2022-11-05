@@ -20,6 +20,22 @@ function delElements() {
   })
 }
 
+function setStorage(key, val) {
+  localStorage.setItem(key, val);
+}
+
+function runStorage(key) {
+  let s = localStorage.getItem(key);
+  if (s === 'btn') {
+    buttons();
+  } else if (s === 'tab') {
+    create_table_form();
+  }
+}
+window.onload = (event) => {
+  runStorage(key);
+};
+
 
 
 
