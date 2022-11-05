@@ -25,6 +25,8 @@ function buttons() {
         btns.innerHTML = "Click me :)";
         div_btns.appendChild(btns);
     }
+    
+    setStorage(key, 'btn');
 }
 
 document.addEventListener("click", function (event) {
